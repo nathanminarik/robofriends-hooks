@@ -1,0 +1,66 @@
+Arguments: 
+  /Users/nathanaelminarik/.nvm/versions/node/v20.11.0/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /Users/nathanaelminarik/miniconda3/bin:/Users/nathanaelminarik/miniconda3/condabin:/Users/nathanaelminarik/.nvm/versions/node/v20.11.0/bin:/usr/local/bin:/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  20.11.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "robofriends",
+    "version": "0.1.0",
+    "homepage": "https://nathanminarik.github.io/robofriends-hooks",
+    "private": true,
+    "dependencies": {
+      "gh-pages": "^6.1.1",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-scripts": "^5.0.1",
+      "tachyons": "^4.12.0"
+    },
+    "devDependencies": {
+      "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject",
+      "predeploy": "npm run build",
+    + "deploy": "gh-pages -d build"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/nathanaelminarik/Education/ztm/jts/robofriends/package.json: Expected double-quoted property name in JSON at position 595
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
